@@ -5,13 +5,19 @@ toc: false
 layout: wide
 ---
 
-<div class="hx-mt-4"></div>
+<div class="hx:mt-4"></div>
 
-<p class="hx-mb-12 hx-text-center hx-text-lg hx-text-gray-500 dark:hx-text-gray-400">
+<p class="hx:mb-12 hx:text-center hx:text-lg hx:text-gray-500 hx:dark:text-gray-400">
 由 Hextra 驱动的开源网站和项目。
 </p>
 
 {{< cards >}}
+  {{< card
+        link="https://beginnerprivacy.com"
+        title="Beginner Privacy"
+        image="https://github.com/user-attachments/assets/a72582a8-7c54-40cd-b8e3-8fd77164687c"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
 
   {{< card
         link="https://github.com/axivo/website"
