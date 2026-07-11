@@ -1,0 +1,18 @@
+name: SBOM
+
+'on':
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  graphion_sbom:
+    uses: corestacklabs/graphion-workflow-templates/.github/workflows/sbom.yml@main
+    secrets:
+      CORESTACK_ACCESS_KEY: ${{ secrets.CORESTACK_ACCESS_KEY }}
+      CORESTACK_SECRET_KEY: ${{ secrets.CORESTACK_SECRET_KEY }}
+    with:
+      PATH: './'
+      project_name: 'Hextra'
